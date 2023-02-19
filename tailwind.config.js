@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',"./src/**/*.{html,js}"],
   theme: {
+    colors:{
+      primary:'#e94560',
+
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui"),('flowbite/plugin')],
+  
 }
